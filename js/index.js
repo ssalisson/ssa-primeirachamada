@@ -1,8 +1,8 @@
 const cursos = {
   // Recife
-  medicina_recife: { corte: 79.19, campus: "Recife" },
+  medicina_recife: { corte: 77.19, campus: "Recife" },
   engenharia_comp_recife: { corte: 73.86, campus: "Recife" },
-  direito_recife: { corte: 72.90, campus: "Recife" },
+  direito_recife: { corte: 70.90, campus: "Recife" },
   odontologia_recife: { corte: 61.21, campus: "Recife" },
   ciencias_biologicas_recife: { corte: 58.79, campus: "Recife" },
   enfermagem_recife: { corte: 54.49, campus: "Recife" },
@@ -21,7 +21,7 @@ const cursos = {
 
   // Caruaru
   sistemas_informacao_caruaru: { corte: 58.76, campus: "Caruaru" },
-  administracao_caruaru: { corte: 33.37, campus: "Caruaru" },
+  administracao_caruaru: { corte: 51.25, campus: "Caruaru" },
 
   // Nazaré da Mata 
   ciencia_computacao_nazare: { corte: 56.36, campus: "Nazré da Mata" },
@@ -35,7 +35,7 @@ const cursos = {
   tecnologia_logistica_nazare: { corte: 38.26, campus: "Nazré da Mata" },
 
   // Garanhuns
-  medicina_garanhuns: { corte: 76.39, campus: "Garanhuns" },
+  medicina_garanhuns: { corte: 74.39, campus: "Garanhuns" },
   psicologia_garanhuns: { corte: 59.07, campus: "Garanhuns" },
   engenharia_software_garanhuns: { corte: 62.99, campus: "Garanhuns" },
   computacao_garanhuns: { corte: 44.40, campus: "Garanhuns" },
@@ -62,7 +62,7 @@ const cursos = {
   odontologia_arcoverde: { corte: 58.51, campus: "Arcoverde" },
 
   // Serratalhada
-  medicina_serratalhada: { corte: 74.81, campus: "Serratalhada" },
+  medicina_serratalhada: { corte: 73.81, campus: "Serratalhada" },
 
   // Surubim
   engenharia_software_surubim: { corte: 55.52, campus: "Surubim" },
