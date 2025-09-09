@@ -1,6 +1,6 @@
 const cursos = {
   // Recife
-  medicina_recife: { corte: 77.19, campus: "Recife" },
+  medicina_recife: { corte: 79.15, campus: "Recife" },
   engenharia_comp_recife: { corte: 73.86, campus: "Recife" },
   direito_recife: { corte: 70.90, campus: "Recife" },
   odontologia_recife: { corte: 61.21, campus: "Recife" },
