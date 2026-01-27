@@ -102,23 +102,12 @@ function calcularNota3() {
       const N5 = N4 - notaRedacao;
       const nota3Necessaria = N5 / 3;
 
-      const mediaFinal = (nota3Necessaria * 0.75) + (notaRedacao * 0.25);
-      nota3Input.value = nota3Necessaria.toFixed(2);
-
-      if (nota3Necessaria > 100) {
-          resultadoDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Nota necessária no SSA-3: ' + nota3Necessaria.toFixed(2);
-          resultadoDiv.style.backgroundColor = "rgb(255, 255, 163)"; 
-      } else if (nota3Necessaria < 0) {
-          resultadoDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Você já passou!';
-          resultadoDiv.style.backgroundColor = "rgb(255, 255, 163)"; 
-      } else {
-          resultadoDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Nota necessária no SSA-3: ' + nota3Necessaria.toFixed(2);
-          resultadoDiv.style.backgroundColor = "rgb(255, 255, 163)";
-      }
+      const questoesNecessarias = Math.max(0, Math.ceil(nota3Necessaria / 1.053));
+      nota3Input.value = "";
+      resultadoDiv.innerHTML = 'Você precisa acertar ' + questoesNecessarias + ' questões no SSA-3';
 
       resultadoDiv.style.display = "block";
 
-      mostrarDetalhes(nota1, nota2, notaRedacao, parseFloat(nota3Input.value), notaMinima, mediaFinal, campus);
   } else {
       resultadoDiv.innerHTML = "Curso não encontrado.";
       nota3Input.value = "";
