@@ -105,7 +105,8 @@ function calcularNota3() {
       const questoesNecessarias = Math.max(0, Math.ceil(nota3Necessaria / 1.053));
       nota3Input.value = "";
       resultadoDiv.innerHTML = 'Você precisa acertar ' + questoesNecessarias + ' questões no SSA-3';
-
+          resultadoDiv.style.fontSize = "20px";
+          resultadoDiv.style.fontWeight = "bold";
       resultadoDiv.style.display = "block";
 
   } else {
@@ -152,3 +153,4 @@ function limparTudo() {
   document.getElementById("resultado").style.display = "none";
   document.getElementById("detalhes").style.display = "none";
 }
+
